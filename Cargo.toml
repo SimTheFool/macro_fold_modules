@@ -1,0 +1,13 @@
+[package]
+name = "macro_fold_modules"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+convert_case = "0.6.0"
+quote = "1.0.28"
+syn = {version = "2.0.18", features = ["extra-traits", "full", "parsing", "visit"]}
+thiserror = "1.0.40"
